@@ -1,0 +1,142 @@
+  /* Comentario*/
+  html, body {
+    height:100%;
+  }
+  body{
+    align-items: center;
+    margin: 0;
+}
+header{
+    background: url(./Iconos/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+    #head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    
+       
+    }
+    #barra{
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+    }
+    .icon{
+        width: 25px;
+    }
+
+    #pasos{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 2%;    
+    }
+
+.paso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #prueba{
+        display: flex;
+    }
+
+    .icon-circle{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #FE8EAB;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
+    }
+    .line{
+        background-color: #83960b9f;
+        height: 5px;
+        width: 150px;
+        border-radius:10px;
+    }
+
+    #seccioncard{
+        background: rgba(135, 100, 164, 0.04);
+        border-radius: 75px 0px;
+        display: flex;
+        align-items: center;    
+        margin-bottom: 100px;
+    }
+    #numcard{
+        background-color: #D7D7D7; 
+        border-color: #D7D7D7; 
+        height: 15px; 
+        width: 380px;
+        margin-top: 15px;
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: flex-end;
+        margin: 15px;
+        margin-top: 50px;
+
+   }
+   #validar{
+    background-color: rgba(131, 150, 11, 0.52); 
+    border-color:rgba(131, 150, 11, 0.726); 
+    border-radius: 8px;
+    width: 120px;
+    height: 40px;
+    margin-right: 40px;
+   }
+
+
+    #carduno{
+        width: 420px;
+        height: 245px;
+        background-color: #F8AAAA;
+        border-radius: 50px 10px;
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #instrucciones{
+        display: flex;
+        flex-direction: column; 
+    }
+
+footer{
+    background-color: #3d3f39ab;
+    position:fixed;
+    bottom: 0;
+    width: 100%; 
+
+    
+}
+    #foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    }
+    #contacts{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    }
+
+    .link{
+        text-decoration: none;
+    }
