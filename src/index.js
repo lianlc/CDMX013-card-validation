@@ -1,5 +1,14 @@
-import validator from './validator.js';
-//comentario corto 
-
+import validator from "./validator.js";
+//comentario corto
+//pirat
 /* comentario largo*/
-console.log(validator);
+
+
+
+//ejecutar funcion de valido 
+
+// ejecutar funcion de invalido 
+
+
+
+/*console.log(validator);*/

@@ -1,142 +1,166 @@
-  /* Comentario*/
-  html, body {
-    height:100%;
-  }
-  body{
-    align-items: center;
-    margin: 0;
+/* Comentario*/
+html,
+body {
+  height: 100%;
 }
-header{
-    background: url(./Iconos/fondo.jpg);
-    background-position: center;
-    background-size: cover;
+body {
+  align-items: center;
+  margin: 0;
+}
+header {
+  background: url(./Iconos/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: "Signika Negative", sans-serif;
+  letter-spacing: 1.5px;
+  width: 202px;
+}
+#head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+#barra {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 202px;
+}
+.icon {
+  width: 25px;
+}
 
- }
- main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
-    #head{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1rem;
-    
-       
-    }
-    #barra{
-        display: flex;
-        justify-content: space-between;
-        width: 100px;
-    }
-    .icon{
-        width: 25px;
-    }
-
-    #pasos{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        margin: 2%;    
-    }
-
-.paso{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    #prueba{
-        display: flex;
-    }
-
-    .icon-circle{
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    background-color: #FE8EAB;
-    display: flex;
+#pasos {
+  display: flex;
   justify-content: center;
   align-items: center;
-
-    }
-    .line{
-        background-color: #83960b9f;
-        height: 5px;
-        width: 150px;
-        border-radius:10px;
-    }
-
-    #seccioncard{
-        background: rgba(135, 100, 164, 0.04);
-        border-radius: 75px 0px;
-        display: flex;
-        align-items: center;    
-        margin-bottom: 100px;
-    }
-    #numcard{
-        background-color: #D7D7D7; 
-        border-color: #D7D7D7; 
-        height: 15px; 
-        width: 380px;
-        margin-top: 15px;
-    }
-    
-    .boton{
-        display: flex;
-        justify-content: flex-end;
-        margin: 15px;
-        margin-top: 50px;
-
-   }
-   #validar{
-    background-color: rgba(131, 150, 11, 0.52); 
-    border-color:rgba(131, 150, 11, 0.726); 
-    border-radius: 8px;
-    width: 120px;
-    height: 40px;
-    margin-right: 40px;
-   }
-
-
-    #carduno{
-        width: 420px;
-        height: 245px;
-        background-color: #F8AAAA;
-        border-radius: 50px 10px;
-        margin: 3%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #instrucciones{
-        display: flex;
-        flex-direction: column; 
-    }
-
-footer{
-    background-color: #3d3f39ab;
-    position:fixed;
-    bottom: 0;
-    width: 100%; 
-
-    
+  margin: 2%;
 }
-    #foot{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem;
-    }
-    #contacts{
-    display: flex;
-    justify-content: space-between;
-    width: 80px;
-    }
 
-    .link{
-        text-decoration: none;
-    }
+.paso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+#prueba {
+  display: flex;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #fe8eab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  background-color: #83960b9f;
+  height: 5px;
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+#seccioncard {
+  background: rgba(135, 100, 164, 0.04);
+  border-radius: 75px 0px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#numcard {
+  background-color: #d7d7d7;
+  border-color: #d7d7d7;
+  height: 15px;
+  width: 380px;
+  margin-top: 15px;
+}
+
+#logocard {
+  margin-left: 280px;
+  margin-bottom: 40px;
+}
+#textcard {
+  display: flex;
+  margin-top: 5px;
+}
+
+.boton {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  margin-top: 50px;
+}
+#validar {
+  background-color: rgba(131, 150, 11, 0.52);
+  border-color: rgba(131, 150, 11, 0.726);
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  margin-right: 40px;
+}
+
+#carduno {
+  width: 420px;
+  height: 245px;
+  background-color: #f8aaaa;
+  border-radius: 50px 10px;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+ margin-left: 8px;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+#instrucciones {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #3d3f39ab;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+#contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+
+.link {
+  text-decoration: none;
+}
+p,
+button,
+label {
+  font-family: "Poppins", sans-serif;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

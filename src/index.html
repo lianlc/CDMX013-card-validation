@@ -57,22 +57,30 @@
     <div id="seccioncard">
 
         <div id="carduno">
-            <img width="50" src="./Iconos/amex.png" alt="amex">
-            <p style="color: #FFFFFF">**** **** **** ****</p>
+          <div>
+            <img id="logocard" width="50" src="./Iconos/amex.png" alt="amex">
+          </div>
+          <div id=textcard>
+<p style="color: #ffffff;
+           font-size: 30px;">**** **** **** </p> 
+           <p id="card">  ****</p>
+          </div>
           </div>
           
           <div id="instrucciones">
-            <p style="color: rgb(117, 117, 117); margin-top: 80px;">Para continuar con tu compra, te pedimos validar los datos de tu tarjeta.</p>
+            <p  style="color: rgb(117, 117, 117); margin-top: 80px;">Para continuar con tu compra, te pedimos validar los datos de tu tarjeta.</p>
             <div>
               <label style="color:#8D8D8D">Ingresa los 16 numeros de tu tarjeta:</label>
             </div>
+
             <div id="inputs">
+
               <form id="prueba" action="carval">
-                  <input type="password" id="numcard"  minlength="16" maxlength="16" >
+                  <input type="tel" id="numcard" pattern="[0-9\s]{16,16}" maxlength="16">
+                  <div class="boton">
+                    <button id="validar" type="submit" style="color:#FFFFFF">Validar</button>
+                  </div>
               </form>
-            </div>
-            <div class="boton">
-              <button id="validar" >Validar</button>
             </div>
           </div>
         </div>
@@ -97,3 +105,4 @@
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
