@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Flor Celeste 🌸</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -10,99 +10,152 @@
 
     <header>
       <div id="head">
-       <h1 style="color: rgb(255, 255, 255)">Flor Celeste</h1>
-       <img width="40" src="./Iconos/flower.png" alt="Logo">
+        <h1 style="color: rgb(255, 255, 255)">Flor Celeste</h1>
+        <img width="40" src="./Iconos/flower.png" alt="Logo" />
 
-      <div id="barra">
-       <img  class="icon" src="./Iconos/search.png" alt="Buscar">
-       <img  class="icon" src="./Iconos/home.png" alt="Inicio">
-       <img  class="icon" src="./Iconos/canasta.png" alt="Carrito">
-      </div>
+        <div id="barra">
+          <img class="icon" src="./Iconos/search.png" alt="Buscar" />
+          <img class="icon" src="./Iconos/home.png" alt="Inicio" />
+          <img class="icon" src="./Iconos/canasta.png" alt="Carrito" />
+        </div>
       </div>
     </header>
 
     <main>
-
-     <div id="pasos">
-
-      <div class="paso">
-        <div class="icon-circle">
-          <img  width="30" src="./Iconos/shopping-cart.png" alt="car">
+      <div id="pasos">
+        <div class="paso">
+          <div class="icon-circle">
+            <img width="30" src="./Iconos/shopping-cart.png" alt="car" />
+          </div>
+          <p style="color: #c3c3c3">Detalles de la compra</p>
         </div>
-        <p style="color: #C3C3C3" >Detalles de la compra</p>
-      </div>
 
-      <div class="line"></div>
+        <div class="line"></div>
 
-      <div class="paso">
-       <div class="icon-circle">
-          <img  width="30" src="./Iconos/credit-card.png" alt="card">
-       </div>
-        <p style="color: #8B8B8B">Validación de tarjeta</p>
-      </div>
-
-      <div class="line"></div>
-
-      <div class="paso">
-        <div class="icon-circle">
-          <img  width="30" src="./Iconos/heart.png" alt="heart">
+        <div class="paso">
+          <div class="icon-circle">
+            <img width="30" src="./Iconos/credit-card.png" alt="card" />
+          </div>
+          <p style="color: #8b8b8b">Validación de tarjeta</p>
         </div>
-        <p style="color: #C3C3C3">Compra finalizada</p>
+
+        <div class="line"></div>
+
+        <div class="paso">
+          <div class="icon-circle">
+            <img width="30" src="./Iconos/heart.png" alt="heart" />
+          </div>
+          <p style="color: #c3c3c3">Compra finalizada</p>
+        </div>
       </div>
 
-      </div>
-
-
-
-    <div id="seccioncard">
-
+      <div id="seccioncard">
         <div id="carduno">
           <div>
-            <img id="logocard" width="50" src="./Iconos/amex.png" alt="amex">
+            <img id="logocard" width="50" src="./Iconos/amex.png" alt="amex" />
           </div>
-          <div id=textcard>
-<p style="color: #ffffff;
-           font-size: 30px;">**** **** **** </p> 
-           <p id="card">  ****</p>
-          </div>
-          </div>
-          
-          <div id="instrucciones">
-            <p  style="color: rgb(117, 117, 117); margin-top: 80px;">Para continuar con tu compra, te pedimos validar los datos de tu tarjeta.</p>
-            <div>
-              <label style="color:#8D8D8D">Ingresa los 16 numeros de tu tarjeta:</label>
-            </div>
-
-            <div id="inputs">
-
-              <form id="prueba" action="carval">
-                  <input type="tel" id="numcard" pattern="[0-9\s]{16,16}" maxlength="16">
-                  <div class="boton">
-                    <button id="validar" type="submit" style="color:#FFFFFF">Validar</button>
-                  </div>
-              </form>
-            </div>
+          <div id="textcard">
+            <p style="color: #ffffff; font-size: 30px">**** **** ****</p>
+            <p id="card">****</p>
           </div>
         </div>
-        
-      </div>
-    </main>
 
+        <div id="instrucciones">
+          <p style="color: rgb(117, 117, 117); margin-top: 80px">
+            Para continuar con tu compra, te pedimos validar los datos de tu
+            tarjeta.
+          </p>
+          <div>
+            <label style="color: #8d8d8d"
+              >Ingresa los 16 numeros de tu tarjeta:</label
+            >
+          </div>
+
+          <div id="inputs">
+            <form id="prueba" action="carval">
+              <input
+                type="tel"
+                id="numcard"
+                pattern="[0-9\s]{16,16}"
+                maxlength="16"
+              />
+              <div class="boton">
+                <button id="validar" type="submit" style="color: #ffffff">
+                  Validar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--MENSAJES-->
+      <!--<div class="fondo">-->
+      <div class="mensaje" id="success_message">
+        <img
+          width="80"
+          style="margin-top: 20px"
+          src="./Iconos/check-mark.png"
+          alt="Valido"
+        />
+        <p style="color: #8d8d8d; font-size: 30px; margin: 20px">
+          ¡Tarjeta valida !
+        </p>
+        <button class="aceptar" style="color: #ffffff">Aceptar</button>
+        <!--</div>-->
+      </div>
+      <!--<div class="fondo">-->
+      <div class="mensaje" id="error_message">
+        <img
+          width="80"
+          style="margin-top: 20px"
+          src="./Iconos/error-mark.png"
+          alt="Invalido"
+        />
+        <p
+          style="
+            color: #8d8d8d;
+            font-size: 30px;
+            margin-bottom: 0;
+            margin-top: 2px;
+          "
+        >
+          ¡Tarjeta invalida !
+        </p>
+        <p style="color: #616161; font-size: 15px">
+          Por favor, intenta de nuevo o prueba con otra tarjeta.
+        </p>
+        <button class="aceptar" style="color: #ffffff">Aceptar</button>
+      </div>
+      <!--</div>-->
+    </main>
 
     <footer>
       <div id="foot">
-        <div ><p style="color: rgb(255, 255, 255)">2022, Derechos reservados.</p>
+        <div>
+          <p style="color: rgb(255, 255, 255)">2022, Derechos reservados.</p>
         </div>
-        <div ><a class="link" href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=CjwKCAjwoMSWBhAdEiwAVJ2ndrJ0pQd2Mg5LYpiMtwhmUS1RlkBiHSNVXSnzxm1gYbpJASpdAU6d9RoCyIQQAvD_BwE" target="_blank"><p style="color: rgb(255, 255, 255)">Politicas de privacidad.</p></a>
+        <div>
+          <a
+            class="link"
+            href="https://www.cookiebot.com/es/politica-de-privacidad-para-mi-web/?gclid=CjwKCAjwoMSWBhAdEiwAVJ2ndrJ0pQd2Mg5LYpiMtwhmUS1RlkBiHSNVXSnzxm1gYbpJASpdAU6d9RoCyIQQAvD_BwE"
+            target="_blank"
+            ><p style="color: rgb(255, 255, 255)">
+              Politicas de privacidad.
+            </p></a
+          >
         </div>
         <div id="contacts">
-        <a href="mailto:lianlc1710@gmail.com" target="_blank"><img  width="15" src="./Iconos/mail.png" alt="mail"></a>       
-         <a><img  width="15" src="./Iconos/whatsapp.png" alt="wapp"></a>
-       <a href="https://www.instagram.com/celeslc/" target="_blank"> <img  width="15" src="./Iconos/instagram.png" alt="ig"></a>
-       </div>
+          <a href="mailto:lianlc1710@gmail.com" target="_blank"
+            ><img width="15" src="./Iconos/mail.png" alt="mail"
+          /></a>
+          <a><img width="15" src="./Iconos/whatsapp.png" alt="wapp" /></a>
+          <a href="https://www.instagram.com/celeslc/" target="_blank">
+            <img width="15" src="./Iconos/instagram.png" alt="ig"
+          /></a>
+        </div>
       </div>
     </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
-
