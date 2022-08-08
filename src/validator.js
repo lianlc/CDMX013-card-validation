@@ -5,7 +5,7 @@ function isValid(creditCardNumber) {
   const ArrayValor = [];
 
   datos.forEach(function (numero, index) {
-    if (index % 2 === 0) {
+    if (index % 2 != 0) {
       //iterar el array para obtener los valores par del arreglo
       //dividir el indice entre 2 para obtener las posiciones par
       if ((numero *= 2) > 9) {
@@ -25,7 +25,7 @@ function isValid(creditCardNumber) {
   sum.forEach(function (numero) {
     suma += Number(numero);
   });
-  //console.log(suma);
+console.log(suma);
 
   if (suma % 10 == 0) {
     return true;
@@ -37,21 +37,16 @@ function isValid(creditCardNumber) {
 }
 
 function maskify(creditCardNumber) {
-  const ultmos = creditCardNumber.substr(creditCardNumber.length - 4); //le indicamos a la variable ultmos que sera igual al valor de cardNum y solo sean los ultimos 4
+ //const ultmos = creditCardNumber.substr(creditCardNumber.length - 4); //le indicamos a la variable ultmos que sera igual al valor de cardNum y solo sean los ultimos 4
   //Se invocala la funcion para incertar los elementos
-  return ultmos;
+  //return ultmos;
+  if (creditCardNumber.length < 6) return creditCardNumber;
+const last = creditCardNumber.substr(-4);
+ console.log(last)
+ const maski = creditCardNumber.substr(0, creditCardNumber.length - 4).replace(/[A-Za-z0-9_]/g, '#');
+ console.log(maski+last)
+  return (maski+last);
 }
-
-//Variable que accede a traves del querySelector al unico form que tengo
-
-//definicion de variables para obtener los ultimos 4 digitos        |
-
-/*;//con esto  estamos indicando que no ejecute lo que haria elevento (e) por defecto hasta que hagamos submit
-  
-  console.log(cardNum); */
-
-// division 10 pra validar
-//si el resutado termina en 0 es vardadero**
 
 export default {
   isValid,

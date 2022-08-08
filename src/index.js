@@ -1,6 +1,5 @@
 import validator from "./validator.js";
 //comentario corto
-//pirat
 /* comentario largo*/
 const numeroDeTarjeta = document.querySelector("#numcard");
 
@@ -21,9 +20,3 @@ $form.addEventListener("submit", function (e) {
     error_message.classList.add("active");
   }
 });
-
-//ejecutar funcion de valido
-
-// ejecutar funcion de invalido
-
-/*console.log(validator);*/
