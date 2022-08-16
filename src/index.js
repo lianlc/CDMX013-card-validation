@@ -14,9 +14,23 @@ $form.addEventListener("submit", function (e) {
   if (valid === true) {
     const success_message = document.querySelector("#success_message");
     success_message.classList.add("active");
+
     //success_message.classList.remove("active");
   } else {
     const error_message = document.querySelector("#error_message");
     error_message.classList.add("active");
   }
+});
+
+let aceptarValid = document.getElementById("aceptarUno");
+aceptarValid.addEventListener("click", function () {
+  location.reload();
+
+  //const sectionCompra = document.getElementById("#seccionCompra");
+  //sectionCompra.classList.add("active");
+});
+
+let aceptarInvalid = document.getElementById("aceptarDos");
+aceptarInvalid.addEventListener("click", function () {
+  location.reload();
 });

@@ -196,3 +196,17 @@ input::-webkit-outer-spin-button {
 .active {
   display: flex;
 }
+
+#seccionCompra {
+  background-color: #f8aaaa;
+  border-radius: 75px 0px;
+  display: none;
+  padding-block: 30px;
+  padding-inline: 35px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#fotoCompra {
+  border-radius: 50px 10px;
+  margin-right: 30px;
+}
